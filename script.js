@@ -1,8 +1,10 @@
-function shortcut(s1, s2) {
-  // your code here
+function shortcut(a, b) {
+    // If either string is empty, return empty string
+    if (!a || !b) {
+        return '';
+    }
+
+    // Return the first character of both strings
+    return a[0] + b[0];
 }
 
-// Do not change the code below.
-const s1 = prompt("Enter s1:");
-const s2 = prompt("Enter s2:");
-alert(shortcut(s1, s2));
